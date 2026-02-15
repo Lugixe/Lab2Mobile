@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">mob2lab</string>
+    <string name="app_name">Art Space</string>
+
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+    <string name="cd_artwork">Artwork image</string> <string name="art1_title">Royal Cat</string>
+    <string name="art1_author">Fluffy Paws (2023)</string>
+    <string name="art1_desc">A fluffy cat looking majestically into the distance.</string>
+
+    <string name="art2_title">Minimalist Table</string>
+    <string name="art2_author">Ikea Design (2020)</string>
+    <string name="art2_desc">A wooden table with a clean design.</string>
+
+    <string name="art3_title">Sleepy Chinchilla</string>
+    <string name="art3_author">Nature (2024)</string>
+    <string name="art3_desc">A cute chinchilla resting after a meal.</string>
 </resources>

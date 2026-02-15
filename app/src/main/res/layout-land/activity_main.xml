@@ -13,14 +13,13 @@
         android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvTitle"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/ivArtwork"
@@ -31,45 +30,57 @@
             tools:src="@drawable/pic1" />
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/tvTitle"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvAuthor"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Royal Cat" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
-    <TextView
-        android:id="@+id/tvAuthor"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/infoContainer"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnPrevious"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Fluffy Paws (2023)" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Royal Cat" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="Fluffy Paws" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnPrevious"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="@string/btn_previous"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnNext"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/guideline" />
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnPrevious"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintStart_toEndOf="@+id/btnPrevious" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
