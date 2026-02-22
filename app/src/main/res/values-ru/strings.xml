@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Арт Галерея</string>
+    <string name="btn_previous">Назад</string>
+    <string name="btn_next">Далее</string>
+    <string name="cd_artwork">Изображение экспоната</string>
+
+    <string name="art1_title">Королевский Кот</string>
+    <string name="art1_author">Максим Роузи - 2021</string>
+    <string name="art1_desc">Пушистый кот, величественно смотрящий вдаль.</string>
+
+    <string name="art2_title">Минималистичный Стол</string>
+    <string name="art2_author">Майкл Смитт - 2026</string>
+    <string name="art2_desc">Деревянный стол с чистым дизайном.</string>
+
+    <string name="art3_title">Сонная Шиншилла</string>
+    <string name="art3_author">Дэвид Кинг - 2024</string>
+    <string name="art3_desc">Милая шиншилла отдыхает после обеда.</string>
+</resources>
